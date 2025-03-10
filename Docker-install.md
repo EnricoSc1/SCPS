@@ -2,8 +2,8 @@
 As a first assignement of the course **Scientific Computing for Physics Students**, this is a brief guide on how to install the program **Docker** on the linux distribution **Fedora 41**. 
 This guide follows one of the possible installation methods from the official [Docker](https://www.docker.com/desktop/setup/install/linux/) website.
 ## Docker Engine and Docker Desktop :ship:
-A first remark should be made on the two possible interfaces available for Docker:
--**Engine**: the Command Line Interface (**CLI**) to interact with the program through the Linux terminal;
+A first remark should be made on the two possible interfaces available for Docker:\
+-**Engine**: the Command Line Interface (**CLI**) to interact with the program through the Linux terminal;\
 -**Desktop**: the Graphic User Interface (**GUI**) which provide a graphic environment to the user and run on top of the Engine. 
 ## Docker Engine :memo:
 - As a prerequirement, install the ``dnf-plugins-core`` package allowing dnf to manage repositories.
