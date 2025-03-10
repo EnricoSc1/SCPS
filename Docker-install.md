@@ -2,8 +2,8 @@
 As a first assignement of the course **Scientific Computing for Physics Students**, this is a brief guide on how to install the program **Docker** on the linux distribution **Fedora 41**. 
 This guide follows one of the possible installation methods from the official [Docker](https://www.docker.com/desktop/setup/install/linux/) website.
 ## Docker Engine and Docker Desktop :ship:
-A first remark should be made on the two possible interfaces available for Docker:\
--**Engine**: the Command Line Interface (**CLI**) to interact with the program through the Linux terminal;\
+A first remark should be made on the two possible interfaces available for Docker:
+-**Engine**: the Command Line Interface (**CLI**) to interact with the program through the Linux terminal;
 -**Desktop**: the Graphic User Interface (**GUI**) which provide a graphic environment to the user and run on top of the Engine. 
 ## Docker Engine :memo:
 - As a prerequirement, install the ``dnf-plugins-core`` package allowing dnf to manage repositories.
@@ -33,6 +33,17 @@ A first remark should be made on the two possible interfaces available for Docke
 >$ sudo dnf install ./docker-desktop-x86_64.rpm
 >
 - Launch the program from your application browser.
-
-
-
+# Running AlmaLinux 9 :cd:
+As an simple example of Docker, here are briefly reported the principal steps to run AlmaLinux 9.
+## Docker Engine
+To download an image from the registry of Docker run in your terminal
+> $ sudo docker pull almalinux:9
+>
+and then to start the container in the **background** type
+> $ sudo docker run almalinux:9
+> 
+If you want to start the container in the **iterative** mode, which gives you an interactive shell, type
+> $ sudo docker -it run almalinux:9
+## Docker Desktop
+In the Desktop version search your desired distribution using the **search** and then press **pull** . The downloaded image is now present in your **Images** tab.\
+Select the image and press **run** to open a new container. 
