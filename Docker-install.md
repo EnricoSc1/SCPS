@@ -34,7 +34,7 @@ A first remark should be made on the two possible interfaces available for Docke
 >
 - Launch the program from your application browser.
 # Running AlmaLinux 9 :cd:
-As an simple example of Docker, here are briefly reported the principal steps to run AlmaLinux 9.
+As a simple example of Docker, here are briefly reported the principal steps to run AlmaLinux 9.
 ## Docker Engine
 To download an image from the registry of Docker run in your terminal
 > $ sudo docker pull almalinux:9
