@@ -4,7 +4,7 @@ This guide follows one of the possible installation methods from the official [D
 ## Docker Engine and Docker Desktop :ship:
 A first remark should be made on the two possible interfaces available for Docker:\
 -**Engine**: the Command Line Interface (**CLI**) to interact with the program through the Linux terminal;\
--**Desktop**: the Graphic User Interface (**GUI**) which provide a graphic environment to the user and run on top of the Engine. 
+-**Desktop**: the Graphical User Interface (**GUI**) which provide a graphic environment to the user and run on top of the Engine. 
 ## Docker Engine :memo:
 - As a prerequirement, install the ``dnf-plugins-core`` package allowing dnf to manage repositories.
 >$ sudo dnf install dnf-plugins-core
