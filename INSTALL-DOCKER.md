@@ -46,7 +46,7 @@ and then to start the container in the **background** type
 > $ sudo docker run almalinux:9
 > 
 If you want to start the container in the **iterative** mode, which gives you an interactive shell, type
-> $ sudo docker -it run almalinux:9
+> $ sudo docker run -it almalinux:9
 ## Docker Desktop
 - In the Desktop version search your desired distribution using the **search bar** and then press **pull** . The downloaded image is now present in your **Images** tab.
 - Select the image and press **run** to open a new container. 
