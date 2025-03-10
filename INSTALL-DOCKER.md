@@ -4,7 +4,7 @@ This guide follows one of the possible installation methods from the official [D
 ## Docker Engine and Docker Desktop :ship:
 A first remark should be made on the two possible interfaces available for Docker:\
 -**Engine**: the Command Line Interface (**CLI**) to interact with the program through the Linux terminal;\
--**Desktop**: the Graphical User Interface (**GUI**) which provide a graphic environment to the user and run on top of the Engine. 
+-**Desktop**: the Graphic User Interface (**GUI**) which provide a graphic environment to the user and run on top of the Engine. 
 ## Docker Engine :memo:
 - As a prerequirement, install the ``dnf-plugins-core`` package allowing dnf to manage repositories.
 >$ sudo dnf install dnf-plugins-core
@@ -16,7 +16,7 @@ A first remark should be made on the two possible interfaces available for Docke
 (Verify that this ``060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35`` is the printed key)
 - Important commands to keep in mind are the following:
 
-| Action                                 | Command                              |  
+| Action                                 | Command                                | 
 |:--------------------------------------:|:--------------------------------------:|
 | Start docker                           | `$ sudo systemctl start docker`        |
 | Stop docker                            | `$ sudo systemctl stop docker`         |
@@ -25,7 +25,10 @@ A first remark should be made on the two possible interfaces available for Docke
 | Disable docker to start on boot        | `$ sudo systemctl disable docker`      |
 | Check if docker is enabled             | `$ sudo systemctl is-enabled docker`   |
 | Start docker now and enable it on boot | `$ sudo systemctl enable --now docker` |
-| List all containers                     | `$ sudo docker ps`                     |
+| List running containers                | `$ sudo docker ps`                     |
+| List all containers                    | `$ sudo docker ps -a`                  |
+| Remove a container                     | `$ sudo docker container rm CONTAINER` |
+| Remove all containers                  | `$ sudo docker container prune`        |
 
 ## Docker Desktop :whale:
 - Download the package [here](https://desktop.docker.com/linux/main/amd64/docker-desktop-x86_64.rpm?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64). 
