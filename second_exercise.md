@@ -1,5 +1,5 @@
 # Second Exercise :pencil:
-The second exercise of the course deal with Linear Algebra, in particular vector sum and matrix multiplication handling via compiler and interpreter. Speaking of them, the choices I made for the languages are:
+The second exercise of the course deal with Linear Algebra, in particular vector sum and matrix multiplication handling via **Compiler** and **Interpreter**. Speaking of them, the choices I made for the languages are:
 - Compiler: **C**, 
 - Interpreter: **Python**.
 
