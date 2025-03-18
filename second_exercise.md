@@ -3,7 +3,7 @@ The second exercise of the course deal with Linear Algebra, in particular vector
 - Compiler: **C**, 
 - Interpreter: **Python**.
 
-Here is the complete request:
+Here are the requests for the exercise:
 
 ![SecondExercise](https://raw.githubusercontent.com/EnricoSc1/SCPS/refs/heads/main/images/Task_2.png)
 ## First: Vector Sum in Python
