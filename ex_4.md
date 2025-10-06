@@ -47,7 +47,7 @@ The trapezoidal rule provides a good approximation of the true result, provided 
 
 2) 	Using the output file you produce, use an interpreted language to calculate the same
 	integral: is this output similar to the one in the previous point? And how close it is?\
-		Here is the task written in Python where the trapezoidal rule is compared against the [Simpson's rule](https://en.wikipedia.org/wiki/Simpson%27s_rule) for numerical integration implemented in the [Scipy](https://scipy.org/) library:
+		Here is the task written in Python where the trapezoidal rule is compared against the [Simpson's rule](https://en.wikipedia.org/wiki/Simpson%27s_rule) for numerical integration implemented in the [SciPy](https://scipy.org/) library:
 	<center>
 	  <img src="https://raw.githubusercontent.com/EnricoSc1/SCPS/refs/heads/main/images/ex_4_py_code.png" alt="FourthPrint" />
 	</center> 
