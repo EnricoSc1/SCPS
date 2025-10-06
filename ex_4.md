@@ -57,7 +57,7 @@ The trapezoidal rule provides a good approximation of the true result, provided 
 	<img src="https://raw.githubusercontent.com/EnricoSc1/SCPS/refs/heads/main/images/ex_4_py_term.png" 
 	  alt="FourthPrint" />
 	</center> 
-	Setting $N=10^4$ the errors produced by the trapezoidal rule in compiled and interpreted languages are of the same order of magnitude. Simpson's rule is more accurate than both, but still nowhere near as accurate as the QGA algorithm.
+	Setting $N=10^4$ the errors produced by the trapezoidal rule in compiled and interpreted languages are of the same order of magnitude. Simpson's rule is more accurate than both, but still nowhere near as accurate as the QAG algorithm.
 
 
 
