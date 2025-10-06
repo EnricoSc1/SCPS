@@ -24,7 +24,6 @@ Briefly, the user is prompted with the number of sampling points N to divide the
 $$\int_a^b dx f(x)\approx\Delta x\left(\frac{f(x_{0}+f(x_N)}{2}+\sum_{k=1}^{N-1}f(x_k)\right).$$
 
 The variable **first_piece** represents the first term in parenthesis, while **second_piece** is computed in a *for loop* increasing its value iteratively over the number of sampling points. 
-
 A better way to numerically integrate relies on the algorithms of the [GSL library](https://www.gnu.org/software/gsl/), specifically the [QAG algorithm](https://www.gnu.org/software/gsl/doc/html/integration.html#qag-adaptive-integration) for adaptive integration:
 <center>
   <img src="https://github.com/EnricoSc1/SCPS/blob/main/images/ex_4_gsl.png?raw=true" 
