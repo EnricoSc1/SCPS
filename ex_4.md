@@ -36,7 +36,7 @@ As result, the execution of the full code prints in the terminal:
 </center>
 
 ## Q&A :question:
-1) How far is the approximation from the analytic solution $I=\frac{e^{\pi/2}-1}{2}$? How can you reduce the relative error? Which is the minimum relative error you can find using the techniques you described in the previous points?
+1) How far is the approximation from the analytic solution $I=\frac{e^{\pi/2}-1}{2}$? How can you reduce the relative error? Which is the minimum relative error you can find using the techniques you described in the previous points?\
 The trapezoidal rule provides a good approximation of the true result, provided the interval is divided into a sufficient number of sampling points. In the case of $N=10^4$, the relative error is $\mathcal O(10^{-8})$. However, the QGA algorithm of the GSL library provides a more accurate result, reaching an extremely low relative error of $\mathcal O(10^{-17})$. Trying to reduce the relative error of the trapezoidal method by increasing the number of sampling points helps improving the accuracy only up to a certain point, as shown below in different tests:
 	<center>
 	  <img src="https://raw.githubusercontent.com/EnricoSc1/SCPS/refs/heads/main/images/ex_4_minim.png" 
