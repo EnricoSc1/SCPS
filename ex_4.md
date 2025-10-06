@@ -18,8 +18,8 @@ then the code for the numerical integration via the trapezoidal rule is
   <img src="https://raw.githubusercontent.com/EnricoSc1/SCPS/refs/heads/main/images/ex_4_trap.png" 
   alt = "FourthTrap" />
 </center>
-Briefly, the user is prompted with the number of sampling points N to divide the integration interval in sub-intervals of equal length \
-$\Delta x= \frac{x_{sup}-x_{inf}}{N}$. The program then write the sampling points $x_k$ and their images $f(x_k)$ in a text file organized in rows and columns. Since the partition has a regular spacing, the trapezoidal rule states that:
+Briefly, the user is prompted with the number of sampling points N to divide the integration interval in sub-intervals of equal length 
+$ \Delta x = \frac{x_{sup}-x_{inf}}{N}$. The program then write the sampling points $ x_k$ and their images $ f(x_k)$ in a text file organized in rows and columns. Since the partition has a regular spacing, the trapezoidal rule states that:
 
 $$\int_a^b dx f(x)\approx\Delta x\left(\frac{f(x_{0}+f(x_N)}{2}+\sum_{k=1}^{N-1}f(x_k)\right).$$
 
