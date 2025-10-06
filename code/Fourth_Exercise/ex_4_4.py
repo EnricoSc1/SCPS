@@ -1,8 +1,7 @@
-import math
 import numpy
 from scipy import integrate
 
-I_TRUE = (math.exp(math.pi / 2) - 1) / 2
+I_TRUE = (numpy.exp(numpy.pi / 2) - 1) / 2
 
 content = numpy.loadtxt("ex4_data.txt")
 

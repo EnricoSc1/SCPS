@@ -1,4 +1,3 @@
-#define _USE_MATH_DEFINES
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -6,8 +5,8 @@
 #include <gsl/gsl_math.h>
 #include <gsl/gsl_sf_exp.h>
 #include <gsl/gsl_sf_trig.h>
-#define ITRUE ((exp(M_PI_2)-1)/2)
-
+#define _USE_MATH_DEFINES
+#define ITRUE ((expl(M_PI_2)-1.0l)/2.0l)
 
 double simple_fun(double x){
 	return exp(x)*cos(x);
@@ -30,8 +29,8 @@ int main(){
 
 	double x_inf = 0;
 	double x_sup = M_PI_2;
-	double xaxis[N];
-	double faxis[N];
+	double *xaxis = malloc((N+1)*sizeof(double));
+	double *faxis = malloc((N+1)*sizeof(double));
 	double delta = ( x_sup - x_inf ) / N;
 
 	//Writing data on an external file
@@ -40,12 +39,12 @@ int main(){
 
 	file = fopen("ex4_data.txt","w");
 	
-	for(int i=0; i<N+1; i++){
+	for(int i=0; i<=N; i++){
 		xaxis[i] = x_inf + i * delta;
 		faxis[i] = simple_fun(xaxis[i]);
 	}
 
-	for(int i=0; i<N+1; i++){
+	for(int i=0; i<=N; i++){
 		fprintf(file,"%lf\t%lf\n",xaxis[i],faxis[i]);
 	}
 		
@@ -78,10 +77,12 @@ int main(){
 	F.params = NULL;
 	
 	gsl_integration_qag(&F, x_inf, x_sup, gsleps_abs, gsleps_rel, N, 6, w, &gslresult, &gslerror);
-	
-	//Pirnt the results
 
-	printf("The numerical integration using the trapezoidal rules is I = %.16lf with relative error %.16e.\n",integral,integral / ITRUE -1);
-	printf("The numerical integration with GSL is I_gsl = %.16lf with relative error %a\n", gslresult, gslresult / ITRUE -1);
+	printf("The numerical integration using the trapezoidal rules is I = %.16lf with relative error %.16Le.\n", integral, integral / ITRUE - 1);
+	printf("The numerical integration with GSL is I_gsl = %.16lf with relative error %.30Le.\n", gslresult, (long double)gslresult / ITRUE - 1);
+	
+	free(xaxis);
+	free(faxis);
+	gsl_integration_workspace_free(w);
 	return 0;
 }
