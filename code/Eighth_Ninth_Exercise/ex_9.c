@@ -28,7 +28,9 @@ int main() {
 		int thread_id = 0;
 	
 		double sum = 0;
-		double *x, *y, *d = (double*)malloc(N[i] * sizeof(double));
+		double *x = (double*)malloc(N[i] * sizeof(double));
+		double *y = (double*)malloc(N[i] * sizeof(double));
+		double *d = (double*)malloc(N[i] * sizeof(double));
 		double *partial_chunk_sum = (double*)malloc(number_of_chunks * sizeof(double));
 		memset(partial_chunk_sum, 0, number_of_chunks * sizeof(double));
 
