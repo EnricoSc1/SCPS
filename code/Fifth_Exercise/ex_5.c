@@ -53,9 +53,9 @@ int main(){
 		gsl_vector_long_double_set(x, i, gsl_ran_gaussian(r,sigma));
 		gsl_vector_long_double_set(y, i, gsl_ran_gaussian(r,sigma));
 		gsl_vector_long_double_set(d, i, a * gsl_vector_long_double_get(x, i) + gsl_vector_long_double_get(y, i) );
-		sum_x += gsl_vector_long_double_get(d,i);
-		sum_y += gsl_vector_long_double_get(x,i);	
-		sum_d += gsl_vector_long_double_get(y,i);
+		sum_x += gsl_vector_long_double_get(x,i);
+		sum_y += gsl_vector_long_double_get(y,i);	
+		sum_d += gsl_vector_long_double_get(d,i);
 	}
 
 	printf("The elements of the GSL vector are:\n");		
@@ -88,7 +88,7 @@ int main(){
 	}
 	printf("\n");
 
-	if(sum_d - (a * sum_x + sum_y) > precision){
+	if(fabsl(sum_d - (a * sum_x + sum_y)) < precision){
 		printf("The sum is correctly implemented!\n");
 	}
 	else{
